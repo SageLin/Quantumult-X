@@ -1,4 +1,4 @@
-hostname = dayone.app, spclient.wg.spotify.com, duolingo-leaderboards-prod, subscription.grammarly.com, ap*.intsig.net, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, p.du.163.com, dict.youdao.com, sjapp.o3aqqc.work, vira.llsapp.com, musicpay.kuwo.cn, vip1.kuwo.cn, *kuwo*, *lrts*, api.calm.com, www.calm.com
+hostname = dayone.app, spclient.wg.spotify.com, duolingo-leaderboards-prod, subscription.grammarly.com, ap*.intsig.net, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, p.du.163.com, dict.youdao.com, sjapp.o3aqqc.work, vira.llsapp.com, musicpay.kuwo.cn, vip1.kuwo.cn, *kuwo*, *lrts*, api.calm.com
 
 
 # ================ 美区App 开始 ================
@@ -27,10 +27,8 @@ hostname = dayone.app, spclient.wg.spotify.com, duolingo-leaderboards-prod, subs
 ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$  url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js
 
 # Calm
-# hostname = api.calm.com, www.calm.com
+# hostname = api.calm.com
 ^https:\/\/api\.calm\.com\/me$ url script-response-body https://qxnav.com/rules/QuantumultX/js/yue/calm.vip.js
-# remove_manage
-^https:\/\/www\.calm\.com\/mobile\/manage-subscription\?token=*  url reject-img
 
 # ================ 美区App 结束 ================
 
