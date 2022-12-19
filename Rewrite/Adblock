@@ -3,7 +3,9 @@ hostname = tiebac.baidu.com, youtubei.googleapis.com, api.zhihu.com, www.zhihu.c
 # ================ 软件去广告 开始 ================
 
 # 哔哩哔哩
-# hostname = *.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com
+# hostname = *.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com
+# ～ BiliBili_哔哩哔哩_1080P高码率+4K画质(番剧和影视除外)
+^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? url script-response-body https://raw.githubusercontent.com/98kevinxiao/javascript/main/Bilibili_json.js
 # 去除动态中的话题
 ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr url reject-dict
 # 去除动态中的最常访问
