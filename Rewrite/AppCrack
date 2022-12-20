@@ -1,4 +1,4 @@
-hostname = dayone.app, spclient.wg.spotify.com, subscription.grammarly.com, ap*.intsig.net, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, p.du.163.com, dict.youdao.com, vira.llsapp.com, musicpay.kuwo.cn, vip1.kuwo.cn, *kuwo*, *lrts*, api.calm.com, www.calm.com
+hostname = dayone.app, spclient.wg.spotify.com, subscription.grammarly.com, ap*.intsig.net, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, p.du.163.com, dict.youdao.com, vira.llsapp.com, musicpay.kuwo.cn, vip1.kuwo.cn, *kuwo*, *lrts*, api.calm.com, www.calm.com, buy.itunes.apple.com
 
 
 # ================ 美区App 开始 ================
@@ -27,6 +27,10 @@ hostname = dayone.app, spclient.wg.spotify.com, subscription.grammarly.com, ap*.
 ^https:\/\/api\.calm\.com\/me$ url script-response-body https://qxnav.com/rules/QuantumultX/js/yue/calm.vip.js
 #remove_manage
 ^https:\/\/www\.calm\.com\/mobile\/manage-subscription\?token=*  url reject-img
+
+# Picsew解锁专业版
+# hostname = buy.itunes.apple.com
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/PicsewProCrack.js
 
 # ================ 美区App 结束 ================
 
