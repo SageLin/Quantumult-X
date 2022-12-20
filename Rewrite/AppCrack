@@ -1,4 +1,4 @@
-hostname = dayone.app, spclient.wg.spotify.com, subscription.grammarly.com, ap*.intsig.net, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, p.du.163.com, dict.youdao.com, vira.llsapp.com, musicpay.kuwo.cn, vip1.kuwo.cn, *kuwo*, *lrts*, api.calm.com, www.calm.com
+hostname = dayone.app, spclient.wg.spotify.com, subscription.grammarly.com, ap*.intsig.net, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, p.du.163.com, dict.youdao.com, vira.llsapp.com, musicpay.kuwo.cn, vip1.kuwo.cn, *kuwo*, *lrts*, api.calm.com, www.calm.com, *account.wps.com
 
 
 # ================ 美区App 开始 ================
