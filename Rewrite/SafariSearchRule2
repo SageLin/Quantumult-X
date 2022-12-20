@@ -47,14 +47,14 @@ hostname = duckduckgo.com
 
 # > > > > > > > > > > 翻译 开始 < < < < < < < < < <
 
-#dlc(DeepL翻译到中文)
-^https:\/\/duckduckgo.com\/\?q=dlc\+([^&]+).+ url 302 https://www.deepl.com/translator#auto/zh/$1 
+#dlc(DeepL English翻译到中文)
+^https:\/\/duckduckgo.com\/\?q=dlc\+([^&]+).+ url 302 https://www.deepl.com/translator#en/zh/$1 
 
-#dle(DeepL翻译到English)
-^https:\/\/duckduckgo.com\/\?q=dle\+([^&]+).+ url 302 https://www.deepl.com/translator#auto/en/$1 
+#dle(DeepL 翻译到English)
+^https:\/\/duckduckgo.com\/\?q=dle\+([^&]+).+ url 302 https://www.deepl.com/translator#zh/en/$1 
 
-#dlj(DeepL翻译到日语)
-^https:\/\/duckduckgo.com\/\?q=dlj\+([^&]+).+ url 302 https://www.deepl.com/translator#auto/ja/$1
+#dlj(DeepL 翻译到日语)
+^https:\/\/duckduckgo.com\/\?q=dlj\+([^&]+).+ url 302 https://www.deepl.com/translator#zh/ja/$1
 
 # trc(Google翻译到中文)
 ^https:\/\/duckduckgo.com\/\?q=trc\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
