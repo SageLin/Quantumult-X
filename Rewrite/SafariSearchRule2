@@ -1,4 +1,4 @@
-hostname = duckduckgo.com
+hostname = duckduckgo.com, *.google.com.hk ,*.google.cn ,*.google.co.jp
 
 # ================ Safari全能搜索 开始 ================
 # Safari 内输入 命令 + 空格 + 关键词 快速指定搜索引擎搜索
@@ -117,9 +117,14 @@ hostname = duckduckgo.com
 ^https:\/\/duckduckgo.com\/\?q=jp&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=jp&urlDesc=
 
 
+# > > > > > > > > > > Google重定向 开始 < < < < < < < < < <
 # 阻止google.com 跳转到google.com.hk
 ^https?:\/\/(www\.)?g\.cn url 302 https://www.google.com
 ^https?:\/\/(www\.)?google\.cn url 302 https://www.google.com
+^https:\/\/www.google.cn\/* url 302 https://www.google.com/search
+^https:\/\/www.google.co.jp\/* url 302 https://www.google.com/search
+^https:\/\/www.google.com.hk\/* url 302 https://www.google.com/search
+# > > > > > > > > > > Google重定向 结束 < < < < < < < < < <
 
 
 # ================ Safari全能搜索 结束 ================
