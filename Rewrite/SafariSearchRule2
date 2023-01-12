@@ -32,9 +32,9 @@ hostname = duckduckgo.com, *.google.com.hk ,*.google.cn ,*.google.co.jp
 # how (wikihow)
 ^https:\/\/duckduckgo.com\/\?q=how\+([^&]+).+ url 302 https://zh.wikihow.com/wikiHowTo?search=$1
 
-# ios (苹果应用搜索)
-^https:\/\/duckduckgo.com\/\?q=ios\+([^&]+).+ url 302 https://www.qimai.cn/search/index/search/$1
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+ios.+ url 302 https://www.qimai.cn/search/index/search/$1
+# iosapp (苹果应用搜索)
+^https:\/\/duckduckgo.com\/\?q=iosapp\+([^&]+).+ url 302 https://www.qimai.cn/search/index/search/$1
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+iosapp.+ url 302 https://www.qimai.cn/search/index/search/$1
 
 # mg (Magi)
 ^https:\/\/duckduckgo.com\/\?q=mg(\+|%20)([^&]+).+ url 302 https://magi.com/search?q=$2
