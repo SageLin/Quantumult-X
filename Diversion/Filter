@@ -6,18 +6,20 @@ host-suffix, www.speedtest.net, Speedtest
 
 # 风车动漫
 host-suffix, www.xmfans.me, China
-host-suffix, www.dm530p.net, China
-host-suffix, m.dm530p.net, China
+host-suffix, dm530p.net, China
+host-suffix, dm530p.com, China
 
 # Wallhaven壁纸
 host-suffix, wallhaven.cc, China
 
+# Apple
+host-suffix, token.safebrowsing.apple, 🍎 Apple
 # > > > > > > > > > > China Net 结束< < < < < < < < < <
 
 
 # > > > > > > > > > > US Net 开始< < < < < < < < < <
 
-host, 18comic.org, US
+# Google
 DOMAIN-SUFFIX, 265.com, 🌐 Google
 DOMAIN-SUFFIX, 2mdn.net, 🌐 Google
 DOMAIN-SUFFIX, abc.xyz, 🌐 Google
@@ -119,6 +121,11 @@ DOMAIN-KEYWORD, gstatic, 🌐 Google
 DOMAIN-KEYWORD, www.google, 🌐 Google
 IP-CIDR, 173.194.0.0/16, 🌐 Google
 IP-CIDR, 74.125.0.0/16, 🌐 Google
+
+# Side
+host-suffix, 18comic.org, US
+host-suffix, hanime1.me, US
+host-suffix, whichav.video, US
 
 # > > > > > > > > > > US Net 结束< < < < < < < < < <
 
