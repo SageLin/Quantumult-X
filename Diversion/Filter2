@@ -1,6 +1,11 @@
 # > > > > > > > > > > Speedtest 开始< < < < < < < < < <
 
+# Speedtest.net
 host-suffix, www.speedtest.net, Speedtest
+
+# cloudflare
+host, www.cloudflare.com, Speedtest
+host, api.mapbox.com, Speedtest
 
 # > > > > > > > > > > China Net 开始< < < < < < < < < <
 
@@ -124,14 +129,23 @@ IP-CIDR, 74.125.0.0/16, 🌐 Google
 
 # Side
 host-suffix, 18comic.org, US
+host, cdn-msp.18comic.vip, US
 host-suffix, hanime1.me, US
 host-suffix, whichav.video, US
 
 # > > > > > > > > > > US Net 结束< < < < < < < < < <
 
 
-# > > > > > > > > > > HK Net 开始< < < < < < < < < <
-
+# instagram
 DOMAIN-KEYWORD, instagram, instagram
 
-# > > > > > > > > > > HK Net 结束< < < < < < < < < <
+# Emby
+# MisakaF
+host-suffix, cf3.misakaf.org,  Emby
+
+
+#Download
+# iOSgod
+host, doownload.iosgods.app, Download
+# Save the Video
+host-suffix, hsa20.w03.savethevideo.com, Download
