@@ -17,8 +17,6 @@ host-suffix, dm530p.com, China
 # Wallhaven壁纸
 host-suffix, wallhaven.cc, China
 
-# Apple
-host-suffix, token.safebrowsing.apple, 🍎 Apple
 # > > > > > > > > > > China Net 结束< < < < < < < < < <
 
 
@@ -137,6 +135,8 @@ host-suffix, whichav.video, US
 
 
 # instagram
+host-suffix, instagram.com, instagram
+host-suffix, cdninstagram.com, instagram
 DOMAIN-KEYWORD, instagram, instagram
 
 # Emby
