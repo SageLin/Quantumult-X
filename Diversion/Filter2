@@ -1,21 +1,21 @@
 # > > > > > > > > > > Speedtest 开始< < < < < < < < < <
 
 # Speedtest.net
-host-suffix, www.speedtest.net, Speedtest
+DOMAIN-SUFFIX, www.speedtest.net, Speedtest
 
 # cloudflare
-host, www.cloudflare.com, Speedtest
-host, api.mapbox.com, Speedtest
+DOMAIN, www.cloudflare.com, Speedtest
+DOMAIN, api.mapbox.com, Speedtest
 
 # > > > > > > > > > > China Net 开始< < < < < < < < < <
 
 # 风车动漫
-host-suffix, www.xmfans.me, China
-host-suffix, dm530p.net, China
-host-suffix, dm530p.com, China
+DOMAIN-SUFFIX, www.xmfans.me, China
+DOMAIN-SUFFIX, dm530p.net, China
+DOMAIN-SUFFIX, dm530p.com, China
 
 # Wallhaven壁纸
-host-suffix, wallhaven.cc, China
+DOMAIN-SUFFIX, wallhaven.cc, China
 
 # > > > > > > > > > > China Net 结束< < < < < < < < < <
 
@@ -89,7 +89,7 @@ DOMAIN-SUFFIX, madewithcode.com, 🌐 Google
 DOMAIN-SUFFIX, material.io, 🌐 Google
 DOMAIN-SUFFIX, mtalk.google.com, 🌐 Google
 DOMAIN-SUFFIX, ocsp.pki.goog, 🌐 Google
-DOMAIN-SUFFIX, pagead-googlehosted.l.google.com, 🌐 Google
+DOMAIN-SUFFIX, pagead-googleDOMAINed.l.google.com, 🌐 Google
 DOMAIN-SUFFIX, pki-goog.l.google.com, 🌐 Google
 DOMAIN-SUFFIX, polymer-project.org, 🌐 Google
 DOMAIN-SUFFIX, recaptcha.net, 🌐 Google
@@ -126,26 +126,26 @@ IP-CIDR, 173.194.0.0/16, 🌐 Google
 IP-CIDR, 74.125.0.0/16, 🌐 Google
 
 # Side
-host-suffix, 18comic.org, US
-host, cdn-msp.18comic.vip, US
-host-suffix, hanime1.me, US
-host-suffix, whichav.video, US
+DOMAIN-SUFFIX, 18comic.org, US
+DOMAIN, cdn-msp.18comic.vip, US
+DOMAIN-SUFFIX, hanime1.me, US
+DOMAIN-SUFFIX, whichav.video, US
 
 # > > > > > > > > > > US Net 结束< < < < < < < < < <
 
 
 # instagram
-host-suffix, instagram.com, instagram
-host-suffix, cdninstagram.com, instagram
+DOMAIN-SUFFIX, instagram.com, instagram
+DOMAIN-SUFFIX, cdninstagram.com, instagram
 DOMAIN-KEYWORD, instagram, instagram
 
 # Emby
 # MisakaF
-host-suffix, cf3.misakaf.org, 🎬 Emby
+DOMAIN-SUFFIX, cf3.misakaf.org, 🎬 Emby
 
 
 #Download
 # iOSgod
-host, doownload.iosgods.app, Download
+DOMAIN, doownload.iosgods.app, Download
 # Save the Video
-host-suffix, hsa20.w03.savethevideo.com, Download
+DOMAIN-SUFFIX, hsa20.w03.savethevideo.com, Download
