@@ -4,6 +4,7 @@
 DOMAIN-SUFFIX, www.speedtest.net, Speedtest
 
 # cloudflare
+DOMAIN, speed.cloudflare.com, Speedtest
 DOMAIN, www.cloudflare.com, Speedtest
 DOMAIN, api.mapbox.com, Speedtest
 
