@@ -126,6 +126,10 @@ DOMAIN-KEYWORD, www.google, 🌐 Google
 IP-CIDR, 173.194.0.0/16, 🌐 Google
 IP-CIDR, 74.125.0.0/16, 🌐 Google
 
+# ChatGPT
+DOMAIN-SUFFIX,openai.com, US
+DOMAIN-SUFFIX,chat.openai.com, US
+
 # Side
 DOMAIN-SUFFIX, 18comic.org, US
 DOMAIN, cdn-msp.18comic.vip, US
