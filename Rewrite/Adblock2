@@ -1,4 +1,4 @@
-hostname = tiebac.baidu.com, *.googlevideo.com, *.youtube.com, www.googleapis.com, youtubei.googleapis.com, api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, rich.kuwo.cn, *.kwcdn.kuwo.cn, mobilead.kuwo.cn, mp.weixin.qq.com, app.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, api.bilibili.com, manga.bilibili.com, api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, d.bilibili.com, *.pornhub.com, 18comic.org
+hostname = tiebac.baidu.com, *.googlevideo.com, *.youtube.com, www.googleapis.com, youtubei.googleapis.com, api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, rich.kuwo.cn, *.kwcdn.kuwo.cn, mobilead.kuwo.cn, mp.weixin.qq.com, app.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, api.bilibili.com, manga.bilibili.com, api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, d.bilibili.com, *.pornhub.com, 18comic.org,  -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
 
 # ================ 软件去广告 开始 ================
 
@@ -65,10 +65,18 @@ hostname = tiebac.baidu.com, *.googlevideo.com, *.youtube.com, www.googleapis.co
 ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js
 
 # YouTube去广告-qx(>=iOS15)
+# 仓库地址：https://github.com/DivineEngine/Profiles/blob/master/Quantumult/Rewrite/Block/YouTubeAds.conf
+# hostname = -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break url reject
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject
 # 去首页瀑布流广告/播放页推荐列表广告(非贴片广告)
 # 仓库地址 https://github.com/app2smile/rules
 # hostname = youtubei.googleapis.com
-^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next)\? url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next)\? script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js, requires-body=true, binary-body-mode=true, timeout=10, tag=youtube-proto
 # hostname = *.googlevideo.com, *.youtube.com, www.googleapis.com
 (^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) url 302 $1$3
 ^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) url reject
