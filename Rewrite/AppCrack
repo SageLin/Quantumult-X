@@ -61,8 +61,4 @@ hostname = dayone.app, spclient.wg.spotify.com, subscription.grammarly.com, ap*.
 # hostname = p.du.163.com
 #^https:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yywnds.js
 ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
-
-# 网易有道词典+解锁VIP     
-# hostname = dict.youdao.com
-^https:\/\/dict\.youdao\.com\/vip\/user\/status url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/
 # ================ 国区App 结束 ================
